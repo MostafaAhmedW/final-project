@@ -46,7 +46,7 @@ export default function Navbar() {
 
         {/* Logo */}
         <Link href="/" className="flex items-center">
-          <Image src={logo} alt="Fresh Cart" className="h-8 w-auto" />
+          <Image src={logo} alt="Fresh Cart" className="h-6 w-auto" />
         </Link>
 
         {/* Desktop Links */}
