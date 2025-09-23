@@ -52,7 +52,7 @@ export default function ResetPasswordForm() {
         },
         });
 
-      router.push("/");
+      router.push("/login");
     } else {
       toast.error(res.message || "Failed to reset password Please try again later.", {
           position: "top-right",

@@ -82,6 +82,7 @@ export default function RegisterForm() {
                   <Input
                     {...field}
                     placeholder="Enter your username"
+                    defaultValue=""
                     className=" border-gray-200 rounded-md focus:outline-none focus:ring-0 mb-0.5 py-5  placeholder:text-gray-400 shadow-sm  focus:shadow-md shadow-green-700 focus:shadow-white !ring-0  "
                   />
                 </FormControl>
@@ -106,6 +107,7 @@ export default function RegisterForm() {
                     {...field}
                     type="email"
                     placeholder="Enter your email"
+                    defaultValue=""
                     className=" border-gray-200 rounded-md  focus:outline-none focus:ring-0   mb-0.5 py-5  placeholder:text-gray-400 shadow-sm focus:shadow-md shadow-green-700 focus:shadow-white !ring-0"
                   />
                 </FormControl>
@@ -130,6 +132,7 @@ export default function RegisterForm() {
                     {...field}
                     type="password"
                     placeholder="Enter your password"
+                    defaultValue=""
                     className=" border-gray-200 rounded-md  focus:outline-none focus:ring-0   mb-0.5 py-5  placeholder:text-gray-400 shadow-sm focus:shadow-md shadow-green-700 focus:shadow-white !ring-0"
                   />
                 </FormControl>
@@ -154,6 +157,7 @@ export default function RegisterForm() {
                     {...field}
                     type="password"
                     placeholder="Enter your re-password"
+                    defaultValue=""
                     className=" border-gray-200 rounded-md  focus:outline-none focus:ring-0   mb-0.5 py-5  placeholder:text-gray-400 shadow-sm focus:shadow-md shadow-green-700 focus:shadow-white !ring-0"
                   />
                 </FormControl>
@@ -178,6 +182,7 @@ export default function RegisterForm() {
                     {...field}
                     type="tel"
                     placeholder="Enter your phone"
+                    defaultValue=""
                     className=" border-gray-200 border rounded-md focus:outline-none focus:ring-0 mb-3 py-5  placeholder:text-gray-400 shadow-sm focus:shadow-md shadow-green-700 focus:shadow-white !ring-0"
                   />
                 </FormControl>
