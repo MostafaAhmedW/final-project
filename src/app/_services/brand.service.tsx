@@ -11,7 +11,8 @@ return finalRes.data;
    
 
  } catch (error) {
-    return null
+   console.log(error);
+    return null;
     
  }
 
@@ -29,7 +30,9 @@ export async function getSpecifiedBrand(
     const finalRes = await res.json();
     return finalRes.data;
   } catch (error) {
+    console.log(error);
     return null;
+    
   }
 }
 
@@ -46,6 +49,7 @@ export async function getBrandProduct(
 
     return finalRes.data;
   } catch (error) {
+    console.log(error);
     return null;
   }
 }

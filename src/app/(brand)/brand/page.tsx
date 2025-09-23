@@ -7,12 +7,12 @@ export default async function page() {
   const res = await getAllBrands()
 
   return (
-    <div className=" mt-20 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 container m-auto  p-4 ">
+    <div className=" mt-20 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 container m-auto  p-4 ">
 
       {res?.map(brand => <Link key={brand._id} href={`/brandDetails/${brand._id} `}>
 
 
-        <div className="bg-white rounded-xl shadow-md dark:shadow-white hover:shadow-lg transition p-3 cursor-pointer hover:scale-105 duration-300 " >
+        <div className="bg-white rounded-xl shadow-md dark:shadow-white hover:shadow-lg p-3 cursor-pointer " >
 
           <Image width={500} height={500} src={brand.image} alt={brand.name} className="w-full object-contain rounded-md mb-3 cursor-pointer" />
 

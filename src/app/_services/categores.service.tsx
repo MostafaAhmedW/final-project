@@ -10,6 +10,7 @@ export default async function getAllCategorys(): Promise<null | CategoryType[]> 
 
 
    } catch (error) {
+          console.log(error);
       return null
 
    }

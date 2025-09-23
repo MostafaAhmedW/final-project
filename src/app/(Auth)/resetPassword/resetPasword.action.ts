@@ -29,6 +29,8 @@ export async function handelResetPassword(data: ResetPasswordFormType) {
       return { success: false, message: finalResp.message };
     }
   } catch (error) {
+    console.log(error);
+    
     return { success: false, message: "Something went wrong" };
   }
 }

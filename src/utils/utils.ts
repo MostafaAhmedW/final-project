@@ -3,8 +3,6 @@ import { cookies } from "next/headers";
 
 export async function getMyUserToken(){
     
-    
-   
     const cooke = await cookies();
    const sessionToken = cooke.get('next-auth.session-token')?.value;
 
@@ -13,5 +11,4 @@ export async function getMyUserToken(){
    console.log('decodedToken' , decodedToken);
    return decodedToken?.credentialsToken;
    
-
 }

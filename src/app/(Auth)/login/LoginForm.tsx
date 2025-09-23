@@ -110,8 +110,7 @@ export default function LoginForm() {
           />
 
           <div className="mt-3 w-full flex justify-between items-center ">
-
-            <div >
+            <div>
               {btnLoading ? (
                 <Button
                   type="button"
@@ -127,19 +126,15 @@ export default function LoginForm() {
               )}
             </div>
 
-            <div >
+            <div>
               <Link
                 href="/forgetPassword"
                 className="dark:text-blue-700 text-blue-600 hover:text-blue-600 hover:underline text-sm font-medium"
               >
                 Forget Password?
               </Link>
-
             </div>
-
           </div>
-
-
         </form>
       </Form>
     </div>

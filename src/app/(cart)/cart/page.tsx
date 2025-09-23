@@ -4,7 +4,6 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Table, TableBody, TableCaption, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table';
 import Image from 'next/image';
-// import React, { useEffect } from 'react';
 import RemoveItemBtn from './RemoveItemBtn';
 import ChangeCountBtn from './ChangeCountBtn';
 import RemoveAllCart from './RemoveAllCart';
@@ -23,8 +22,6 @@ export default async function CartPage() {
     const res = await getUserCart();
     return res;
   }
-
-
 
   const { numOfCartItems, products, totalCartPrice } = await handleGetUserCart();
 
@@ -108,7 +105,6 @@ export default async function CartPage() {
           </TableBody>
         </Table>
       </div>
-
 
       <div className="grid gap-4 md:hidden">
         {products.map((item: ItemType) => (

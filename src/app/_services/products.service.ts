@@ -27,6 +27,7 @@ export async function getSpecifiedProduct(
 
     return finalRes.data;
   } catch (error) {
+        console.log(error);
     return null;
   }
 }

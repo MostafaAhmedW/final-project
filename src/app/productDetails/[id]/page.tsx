@@ -2,9 +2,7 @@ import { getSpecifiedProduct } from "@/app/_services/products.service";
 import React from "react";
 import { FaStar } from "react-icons/fa";
 import ProductSlider from './../../_Comopnents/ProductSlider/ProductSlider';
-// import { Button } from "@/components/ui/button";
 import AddProductBtn from "@/app/_Comopnents/AddProductBtn/AddProductBtn";
-// import { MdFavorite } from "react-icons/md";
 import AddWishListBtn from './../../_Comopnents/AddWishListBtn/AddWishListBtn';
 type ProductDetailsProps = {
   params: {
@@ -78,7 +76,6 @@ export default async function productDetails({ params }: ProductDetailsProps) {
            </div>
 
         <AddProductBtn id={onbjectDetails?.id} />
-
 
       </div>
     </div>

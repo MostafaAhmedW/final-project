@@ -6,7 +6,7 @@ export async function handelLogin(data:LoginFormType){
 
   try {
 
-   const res=await fetch(` https://ecommerce.routemisr.com/api/v1/auth/signin `, {
+   const res=await fetch(`https://ecommerce.routemisr.com/api/v1/auth/signin`, {
 
         method:'post',
         body:JSON.stringify(data),
@@ -43,7 +43,6 @@ export async function handelLogin(data:LoginFormType){
     else{
         return finalResp.message;
     }
-
 
     } catch (error) {
         console.log(error);

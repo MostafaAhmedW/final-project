@@ -14,6 +14,8 @@ export async function handelRestCode(data: RestCodeFormType) {
     return finalResp; 
 
   } catch (error) {
+    console.log(error);
+    
     return null;
   }
 }

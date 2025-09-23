@@ -25,17 +25,14 @@ export async function handelRegister(data:RegisterFormType){
        const cookie  = await cookies();
        cookie.set('user-token' , finalResp.token , {
 
-
         httpOnly:true,
        
         sameSite: 'strict',
 
         maxAge: 60 * 60 * 24 * 7
   
-         
        });
  
-
         return true;
 
     }
