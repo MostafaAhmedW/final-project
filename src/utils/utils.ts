@@ -1,14 +1,24 @@
 import { decode } from "next-auth/jwt";
 import { cookies } from "next/headers";
 
-export async function getMyUserToken(){
-    
-    const cooke = await cookies();
-   const sessionToken = cooke.get('next-auth.session-token')?.value;
+export async function getMyUserToken() {
+  const cookieStore = await cookies();
 
-   const decodedToken = await decode({ token:sessionToken  , secret: process.env.NEXTAUTH_SECRET || ''})
+  const sessionToken =
+    cookieStore.get("next-auth.session-token")?.value ||
+    cookieStore.get("__Secure-next-auth.session-token")?.value;
 
-   console.log('decodedToken' , decodedToken);
-   return decodedToken?.credentialsToken;
-   
+  if (!sessionToken) {
+    console.log(" No session token found");
+    return null;
+  }
+
+  const decodedToken = await decode({
+    token: sessionToken,
+    secret: process.env.NEXTAUTH_SECRET || "",
+  });
+
+  console.log(" decodedToken", decodedToken);
+
+  return decodedToken?.credentialsToken;
 }

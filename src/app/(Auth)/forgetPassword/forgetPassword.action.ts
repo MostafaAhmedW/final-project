@@ -13,6 +13,8 @@ export async function handelForgetPassword(data: ForgetPasswordFormType) {
     console.log("finalRes forget Password", finalResp);
     return finalResp; 
   } catch (error) {
+    console.log(error);
+    
     return { message: "Something went wrong" };
   }
 }
