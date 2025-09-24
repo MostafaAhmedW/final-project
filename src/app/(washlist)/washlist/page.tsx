@@ -17,9 +17,9 @@ export default async function Washlistpage() {
 
 
  return (
-    <div className="container max-w-7xl mx-auto py-8 px-4">
+    <div className="container max-w-7xl mx-auto py-8 px-4 mt-16">
 
-      <h1 className="text-3xl font-bold text-blue-700 mb-4">Your Wishlist</h1>
+      <h1 className="text-3xl font-bold text-green-700 mb-4">Your Wishlist</h1>
 
       <div className="bg-gray-100 p-4 rounded-md shadow-sm mb-6 flex flex-col sm:flex-row justify-between gap-4">
         <div>
