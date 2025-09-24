@@ -45,7 +45,7 @@ export default async function Washlistpage() {
 
           <TableBody className="border-gray-100 border">
             {data.map((item: ProductType) => (
-              <TableRow key={item._id} className="hover:bg-gray-50">
+              <TableRow key={item._id} >
 
                 <TableCell className="font-medium">
                   <div className="flex items-center gap-3">
@@ -56,11 +56,11 @@ export default async function Washlistpage() {
                       height={100}
                       className="rounded-md shadow"
                     />
-                    <span className="font-semibold text-gray-800">{item.title.split(' ', 2).join(' ')}</span>
+                    <span className="font-semibold text-gray-800 dark:text-white">{item.title.split(' ', 2).join(' ')}</span>
                   </div>
                 </TableCell>
 
-                <TableCell className="text-gray-700">{item.price} LE</TableCell>
+                <TableCell className="text-gray-700 dark:text-white">{item.price} LE</TableCell>
 
                 <TableCell className="text-right flex justify-end gap-2">
 
